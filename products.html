@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product-My Grocery Store</title>
+  <link rel="stylesheet" href="grocery.css">
+  <script src="grocery.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="logo">
+          <a href="grocery.html">
+            <img src="logo.png" alt="My Grocery Store Logo">
+          </a>
+        </div>
+    
+        <div class="dropdown">
+          <button class="dropbtn">Categories</button>
+          <div class="dropdown-content">
+            <a href="fruits.html">Fruits</a>
+            <a href="vegetable.html">Vegetable</a>
+            <a href="dairy.html">Dairy</a>
+            <a href="beverages.html">Beverages</a>
+            <a href="snacks.html">Snacks</a>
+            <a href="bakery.html">Bakery</a>
+            <a href="meat.html">Meat</a>
+            <a href="seafood.html">Seafood</a>
+            <a href="frozen.html">Frozen</a>
+            <a href="canned.html">Canned</a>
+            <a href="baking.html">Baking</a>
+            <a href="health.html">Health</a>
+            <a href="beauty.html">Beauty</a>
+            <a href="household.html">Household</a>
+            <a href="pet.html">Pet</a>
+          </div>
+        </div>
+    
+        <div class="search-bar">
+          <input type="text" placeholder="Search">
+          <button type="submit">🔍</button>
+        </div>
+    
+        <ul class="nav-links">
+          <li><a href="grocery.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+        <div class="cart">
+          <a href="cart.html">
+            <img src="cart-removebg-preview.png" alt="Shopping Cart">
+          </a>
+        </div>
+    
+        <div class="user-actions">
+          <a href="login.html">Login</a>
+          <a href="signup.html">Sign Up</a>
+        </div>
+      </nav>
+
+      <main class="main-product">
+        
+      </main>
+
+      <footer>
+        <div class="footer-container">
+    
+          <div class="left-col">
+            <img src="logo.png" alt="My Grocery Store Logo">
+            <div class="social-media">
+              <a href="#"><img src="fb.jpg" alt="Facebook"></a>
+              <a href="#"><img src="tw.jpg" alt="Twitter"></a>
+              <a href="https://www.instagram.com/mittal.kush.1769/"><img src="ig.jpg" alt="Instagram"></a>
+              <a href="https://www.youtube.com/channel/UCKvheb-LMO0mytCHa862nhQ"><img src="yt.jpg" alt="YouTube"></a>
+            </div>
+          </div>
+    
+          <div class="right-col">
+            <h1>Our Newsletter</h1>
+            <div class="border"></div>
+            <p>Enter Your Email to get our news and updates.</p>
+            <form action="" class="newsletter-form">
+              <input type="text" class="txtb" placeholder="Enter Your Name">
+              <input type="text" class="txtb" placeholder="Enter Your Email">
+              <input type="text" class="txtb" placeholder="Enter Your Message">
+              <input type="submit" class="btn" value="Send">
+            </form>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <p>
+            &copy; My Grocery Store | Designed by <a href="https://www.linkedin.com/in/kushagra-mittal-66836315b/">Kushagra Mittal...!</a> | <a href="https://github.com/royalmittal"></a>
+          </p>
+        </div>
+        
+      </footer>
+      <button class="back-to-top" id="backToTopBtn">🏠</button>
+      <script>
+        window.addEventListener('scroll', function() {
+          var backToTopBtn = document.getElementById('backToTopBtn');
+          if (window.scrollY > 300) {
+            backToTopBtn.classList.add('show');
+          } else {
+            backToTopBtn.classList.remove('show');
+          }
+        });
+        
+        document.getElementById('backToTopBtn').addEventListener('click', function() {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      </script>
+</body>
+</html>
